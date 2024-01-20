@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <style>
+        h1{
+            margin : 30px;
+        }
+    </style>
+    </head>
+<body>
+    <!-- Mouseover -->
+    <h1 id="h1">Hello , my name is tisha</h1>
+     <p id = "js"></p> 
+
+    <script>
+        document.getElementById("h1").addEventListener("mouseout" , hello);
+        function hello()
+        {
+            document.getElementById("js").innerText = "i am currently pursuing mca in thapar university";
+            document.getElementById("js").style.color = "blue";
+            document.getElementById("js").style.backgroundColor = "pink";
+            document.getElementById("js").style.border = "3px solid black";
+            document.getElementById("js").style.padding = "25px";
+            document.getElementById("js").style.display = "inline";
+            // dcoument.getElementById("js").innerHtml;
+        }
+    </script>
+</body>
+</html>

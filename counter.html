@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body{
+             height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+    .container{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        gap: 10px;
+        flex-direction: column;
+        box-shadow: 0 0 5px lightgrey;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #btn1{
+        font-size: 20px;
+        padding: 2px 10px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    
+    #btn2{
+        font-size: 20px;
+        padding: 1px 10px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    #value{
+        border: 1px solid black;
+        font-size: 25px;
+        padding: 4px 12px;
+    }
+
+    #reset{
+        font-size: 20px;
+        padding: 2px 10px;
+        font-weight: bold;
+    }
+  
+    </style>
+</head>
+<body>
+    <!-- Counter -->
+    <div class="container">
+     <h2><b>Counter App</b></h2>
+
+     <div>
+     <button id="btn1" onclick = "dec()">Decremented by 1</button>
+     <span id="value">0</span>
+     <button id="btn2" onclick = "inc()">Incremented by 1</button>
+     </div>
+
+     <button id="reset" onclick = "res()">Reset Value</button>
+     </div>
+
+    <script>
+       let value =  document.getElementById("value");
+       
+       function dec() 
+       {
+           let count = Number(value.innerText);
+           if(count>0)
+           {
+            value.innerText = count - 1;
+           }
+           else
+           {
+            alert("values less than zero are not allowed to enter");
+           }
+       }
+
+       function inc()
+       {
+        let count = Number(value.innerText);
+        if(count>=100)
+        {
+            alert("Values more than 100 are not allowed");
+        }
+        else
+        {
+            value.innerText = count + 1;
+        }
+       }
+
+       function res()
+       {
+        value.innerText = 0;
+       }
+       
+
+
+
+       
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

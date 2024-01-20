@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 6</title>
+    <style>
+        body {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- keydown-keyup -->
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Shift") {
+                document.body.style.backgroundColor = "blue";
+            }
+        });
+
+        document.addEventListener("keyup", function(event) {
+            if (event.key === "Shift") {
+                document.body.style.backgroundColor = "pink";
+            }
+        });
+    </script>
+</body>
+</html>
